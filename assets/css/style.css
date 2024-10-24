@@ -303,7 +303,6 @@ input[readonly] {
   cursor: not-allowed; }
 
 .input-item__input {
-  height: 60px;
   width: 100%;
   padding: 20px;
   font-size: 16px;
@@ -315,6 +314,8 @@ input[readonly] {
   background-color: #ffffff;
   -webkit-transition: all 300ms;
   transition: all 300ms; }
+  .input-item__input:not(textarea) {
+    height: 60px; }
   .input-item__input::-webkit-input-placeholder {
     color: #353535; }
   .input-item__input:-ms-input-placeholder {
